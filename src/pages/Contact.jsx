@@ -56,7 +56,7 @@ const Contact = () => {
                 required
                 whileFocus={{ scale: 1.05, borderColor: "#e2c37646" }}
                 transition={{ duration: 0.3 }}
-                className="w-full mt-1 px-4 py-2 border rounded-xl focus:ring focus:ring-yellow-300 focus:outline-none"
+                className="w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none"
                 placeholder="Entrez votre nom"
               />
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                 required
                 whileFocus={{ scale: 1.05, borderColor: "#e2c37646" }}
                 transition={{ duration: 0.3 }}
-                className="w-full mt-1 px-4 py-2 border rounded-xl focus:ring focus:ring-yellow-300 focus:outline-none"
+                className="w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none"
                 placeholder="Entrez votre email"
               />
             </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                 required
                 whileFocus={{ scale: 1.05, borderColor: "#e2c37646" }}
                 transition={{ duration: 0.3 }}
-                className="w-full mt-1 px-4 py-2 border rounded-xl focus:ring focus:ring-yellow-300 focus:outline-none h-32 resize-none"
+                className="w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none h-32 resize-none"
                 placeholder="Entrez votre message"
               ></motion.textarea>
             </div>

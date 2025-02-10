@@ -71,11 +71,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-8 space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2">
             <FaEnvelope className="text-gold" />
-            <p className="text-gold">contact@sdbatiment.com</p>
+            <p className="text-gold">contact@sd-batiment.com</p>
           </div>
           <div className="flex items-center space-x-2">
             <FaPhone className="text-gold" />
-            <p className="text-gold">+33 1 23 45 67 89</p>
+            <p className="text-gold">+33 6 33 66 50 55</p>
           </div>
         </div>
         <div className="border-t border-gold mt-6 pt-4 text-center">
