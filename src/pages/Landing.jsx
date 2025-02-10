@@ -46,7 +46,9 @@ const HeroSection = () => (
       
       <img src="/new-design.png" alt="SD Bâtiment" className="h-94 mb-4 relative z-10" />
       <div className="light-ball"></div>
-      <button className="bg-white text-gray-900 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200">
+      <button 
+      onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
+      className="bg-white text-gray-900 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200">
         Contactez-nous
       </button>
     </motion.div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gold py-12 relative overflow-hidden">
+    <footer className="bg-black text-gold py-12 overflow-hidden bottom-0 fixed w-full">
       <div className="absolute inset-0">
         <img
           src="heroimage.jpg"

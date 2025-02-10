@@ -22,12 +22,20 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black-to-r from-blue-500 to-purple-600 flex items-center justify-center p-8">
+    <div 
+      className="min-h-screen flex items-center justify-center p-8 relative bg-cover bg-center"
+      style={{ 
+        backgroundImage: "url('/project11.jpg')",
+      }}
+    >
+      {/* Black overlay with 0.6 opacity */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+      
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-3xl shadow-2xl p-8 max-w-lg w-full"
+        className="bg-white rounded-3xl shadow-2xl p-8 max-w-lg w-full relative"
       >
         <h1 className="text-5xl text-gray-900 text-center">Contactez-nous</h1>
         <p className="text-center text-gray-600 mt-2">

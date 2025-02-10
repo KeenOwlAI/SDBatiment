@@ -32,10 +32,20 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
+.font-blaka {
+  font-family: 'Blaka', sans-serif;
+  font-size: xx-large;
+  color: #e2c376;
+}
+
 nav h1 {
   font-family: 'Blaka', sans-serif;
   font-size: 2rem;
   color: #e2c376; /* Gold text */
+}
+
+.active-link {
+  border-bottom: 2px solid #e2c376;
 }
 
 nav ul {
@@ -75,6 +85,7 @@ footer {
 section {
   padding: 4rem 1rem;
   font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid #e2c376; /* Gold border */
 }
 
 h1, h2, h3 {
@@ -96,6 +107,7 @@ h1, h2, h3 {
   justify-content: center;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid #e2c376; /* Gold border */
 }
 
 .hero::after {
@@ -199,7 +211,6 @@ button:hover {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
-  z-index: 1;
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
