@@ -29,7 +29,7 @@ const Contact = () => {
         transition={{ duration: 0.8 }}
         className="bg-white rounded-3xl shadow-2xl p-8 max-w-lg w-full"
       >
-        <h1 className="text-3xl font-bold text-gray-900 text-center">Contactez-nous</h1>
+        <h1 className="text-5xl text-gray-900 text-center">Contactez-nous</h1>
         <p className="text-center text-gray-600 mt-2">
           contact@sd-batiment.fr | +33 6 33 66 50 55
         </p>

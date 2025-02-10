@@ -21,7 +21,7 @@ const HeroSection = () => (
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-bold text-center"
+        className="text-5xl text-center"
       >
         Construisons Votre Avenir
       </motion.h1>
