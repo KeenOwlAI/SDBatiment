@@ -3,17 +3,17 @@ const About = () => {
     <section className="bg-[#3A3A3A] text-white py-16 mt-12 mb-40">
       {/* Title Section */}
       <div className=" mx-auto text-center mb-16">
-        <h1 className="text-4xl text-gold mb-4 animate__animated animate__fadeInUp">À propos de nous</h1>
-        <p className="text-lg text-gray-300 animate__animated animate__fadeIn animate__delay-1s">
+        <h1 className="text-4xl text-gold mb-4 animate__animated animate__fadeInUp ">À propos de nous</h1>
+        <p className="text-lg text-gray-300 animate__animated animate__fadeIn animate__delay-1s ">
           Votre partenaire de confiance dans la construction durable et innovante.
         </p>
       </div>
 
       {/* Our Mission Section */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 ">
         <div className="space-y-6 animate__animated animate__fadeInLeft animate__delay-1s">
           <h2 className="text-3xl text-gold">Notre Mission</h2>
-          <p className="text-lg text-gray-100">
+          <p className="text-lg text-gray-100 ">
             Nous nous engageons à fournir des services de construction de qualité supérieure tout en respectant les
             normes écologiques. Notre expertise et notre passion pour la construction durable nous permettent de
             réaliser des projets qui allient esthétique et fonctionnalité.
@@ -31,7 +31,7 @@ const About = () => {
       </div>
 
       {/* Our Services Section */}
-      <div className="container mx-auto text-center my-16 px-6 animate__animated animate__fadeIn animate__delay-2s">
+      <div className="container mx-auto text-center my-16 px-6 animate__animated animate__fadeIn animate__delay-2s ">
         <h2 className="text-3xl text-gold mb-6">Nos Services</h2>
         <p className="text-lg text-gray-300 mb-12">Nous proposons une large gamme de services dans le secteur de la construction.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
