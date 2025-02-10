@@ -38,16 +38,18 @@ const HeroSection = () => (
       
       {/* Logo and Button */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="flex flex-col mt-8 items-center justify-center"
-      >
-        <img src="/new-design.png" alt="SD Bâtiment" className="h-94 mb-4" />
-        <button className="bg-white text-gray-900 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200">
-          Contactez-nous
-        </button>
-      </motion.div>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 1 }}
+      className="flex flex-col mt-8 items-center justify-center relative"
+    >
+      
+      <img src="/new-design.png" alt="SD Bâtiment" className="h-94 mb-4 relative z-10" />
+      <div className="light-ball"></div>
+      <button className="bg-white text-gray-900 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200">
+        Contactez-nous
+      </button>
+    </motion.div>
     </div>
   </section>
 );
