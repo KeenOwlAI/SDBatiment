@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { link } from "framer-motion/client";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +12,11 @@ const Navbar = () => {
   return (
     <nav className="bg-black border-b-2 border-gold text-white p-4 fixed w-full top-0 z-10 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-<div className="flex items-center">
-<Link to="/" className="text-xl font-blaka hover:text-gray-400">
-  SD BÂTIMENT
-</Link>
-</div>
+        <div className="flex items-center">
+          <Link to="/" className="text-xl font-blaka hover:text-gray-400">
+            SD BÂTIMENT
+          </Link>
+        </div>
         <div className="hidden md:flex space-x-6 lg:gap-16">
           <motion.p
             whileHover={{ scale: 1.1 }}
@@ -25,8 +24,8 @@ const Navbar = () => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Link to="/" className="hover:text-gold active-link">
-  Accueil
-</Link>
+              Accueil
+            </Link>
           </motion.p>
           <motion.p
             whileHover={{ scale: 1.1 }}
@@ -47,10 +46,7 @@ const Navbar = () => {
             </Link>
           </motion.p>
         </div>
-        <button
-          className="md:hidden text-white text-2xl"
-          onClick={toggleMenu}
-        >
+        <button className="md:hidden text-white text-2xl" onClick={toggleMenu}>
           ☰
         </button>
       </div>
@@ -67,7 +63,10 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Link to="/" className="block px-4 py-2 hover:bg-gray-800 hover:text-gray-400">
+              <Link
+                to="/"
+                className="block px-4 py-2 hover:bg-gray-800 hover:text-gray-400"
+              >
                 Accueil
               </Link>
             </motion.li>
@@ -76,7 +75,10 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Link to="/about" className="block px-4 py-2 hover:bg-gray-800 hover:text-gray-400">
+              <Link
+                to="/about"
+                className="block px-4 py-2 hover:bg-gray-800 hover:text-gray-400"
+              >
                 À Propos
               </Link>
             </motion.li>
@@ -85,7 +87,10 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Link to="/contact" className="block px-4 py-2 hover:bg-gray-800 hover:text-gray-400">
+              <Link
+                to="/contact"
+                className="block px-4 py-2 hover:bg-gray-800 hover:text-gray-400"
+              >
                 Contact
               </Link>
             </motion.li>

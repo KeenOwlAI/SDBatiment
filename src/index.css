@@ -1,8 +1,6 @@
 /* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Blaka:wght@400;700&family=Roboto:wght@400;700&display=swap');
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 @layer utilities {
@@ -88,10 +86,12 @@ section {
   border-bottom: 2px solid #e2c376; /* Gold border */
 }
 
-h1, h2, h3 {
+h1 {
   color: #e2c376;
   font-family: 'Blaka', sans-serif;
   z-index: 10;
+  font-size: 6rem;
+  
 }
 
 .p {
@@ -162,8 +162,8 @@ button:hover {
 }
 
 .section-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-family: 'Blaka', sans-serif;
+  font-size: 4rem;
   text-align: center;
   color: #c9a20b; /* Gold color */
   margin-bottom: 2rem;
@@ -214,7 +214,7 @@ button:hover {
   font-size: 1rem;
   font-weight: bold;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-card:hover {
@@ -244,9 +244,9 @@ button:hover {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 100%;
-  filter: blur(50px);
+  filter: blur(80px);
   z-index: 1;
   top: 50%;
   left: 50%;

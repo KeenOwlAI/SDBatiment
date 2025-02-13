@@ -14,7 +14,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitted(true);
 
-    // Simulate a form submission process
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({ name: "", email: "", message: "" });
@@ -28,16 +27,15 @@ const Contact = () => {
         backgroundImage: "url('/project11.jpg')",
       }}
     >
-      {/* Black overlay with 0.6 opacity */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
       
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative z-10"
+        className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative z-10 mt-[25%] "
       >
-        <h1 className="text-5xl text-gray-900 text-center">Contactez-nous</h1>
+        <h1 className="text-5xl text-gray-900 text-center">Contactez nous</h1>
         <p className="text-center text-gray-600 mt-2">
           contact@sd-batiment.fr | +33 6 33 66 50 55
         </p>
@@ -50,7 +48,6 @@ const Contact = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="mt-8 space-y-6"
           >
-            {/* Name Input */}
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
                 Nom complet
@@ -69,7 +66,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* Email Input */}
             <div>
               <label htmlFor="email" className="block text-sm font-semibold text-gray-700">
                 Email
@@ -88,7 +84,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* Message Input */}
             <div>
               <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
                 Message
@@ -106,7 +101,6 @@ const Contact = () => {
               ></motion.textarea>
             </div>
 
-            {/* Submit Button */}
             <motion.button
               type="submit"
               whileHover={{ scale: 1.1, backgroundColor: "#e2c37646" }}
