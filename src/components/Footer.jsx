@@ -48,24 +48,6 @@ const Footer = () => {
             >
               <FaFacebook className="text-3xl" />
             </motion.a>
-            <motion.a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold hover:text-white transition duration-300"
-              whileHover={{ scale: 1.2 }}
-            >
-              <FaInstagram className="text-3xl" />
-            </motion.a>
-            <motion.a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold hover:text-white transition duration-300"
-              whileHover={{ scale: 1.2 }}
-            >
-              <FaLinkedin className="text-3xl" />
-            </motion.a>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-8 space-y-4 md:space-y-0">

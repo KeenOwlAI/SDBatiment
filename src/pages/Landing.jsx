@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProjectsSection from "../components/ProjectsSection";
+import ProjectsSection from "../components/SectionProjets";
 import Contact from "./Contact";
 
 const HeroSection = () => (
