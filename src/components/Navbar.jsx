@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black border-b-2 border-gold text-white p-4 fixed w-full top-0 z-10 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-black border-b-2 border-gold text-white p-4 fixed w-full top-0 z-50 shadow-md">
+      <div className=" mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="text-xl font-blaka hover:text-gray-400">
             SD BÂTIMENT

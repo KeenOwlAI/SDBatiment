@@ -44,7 +44,7 @@ const Contact = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative z-10 mt-[25%]"
+        className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative z-7 mt-[25%]"
       >
         <h1 className="text-5xl text-gray-900 text-center">Contactez nous</h1>
         <p className="text-center text-gray-600 mt-2">

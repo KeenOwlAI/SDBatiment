@@ -3,7 +3,7 @@ import ProjectsSection from "../components/SectionProjets";
 import Contact from "./Contact";
 
 const HeroSection = () => (
-  <section className="relative h-screen text-white">
+  <section className="relative h-screen text-white my-auto mt-[80px]">
     <video
       className="absolute inset-0 w-full h-full object-cover "
       src="/backgroundvideo.mp4"
@@ -13,7 +13,7 @@ const HeroSection = () => (
       playsInline
     />
     
-    <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center">
+    <div className="relative inset-0 bg-opacity-50 flex flex-col justify-center items-center mt-10">
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,16 +36,17 @@ const HeroSection = () => (
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 1 }}
-      className="flex flex-col mt-8 items-center justify-center relative"
+      className="flex flex-col mt-8 items-center justify-center"
     >
       
-      <img src="/new-design.png" alt="SD Bâtiment" className="h-94 mb-4 relative z-10" />
-      <div className="light-ball"></div>
+      <img src="/new-design.png" alt="SD Bâtiment" className="h-60 mb-4 relative z-10" />
       <button 
       onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
-      className="bg-white text-gray-900 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200">
+      className="relative bg-white text-gray-900 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200">
         Contactez-nous
       </button>
+      <div className="light-ball"></div>
+      
     </motion.div>
     </div>
   </section>
