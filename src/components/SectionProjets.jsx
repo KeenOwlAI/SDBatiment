@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { id: 1, title: "Les Soins Vanxains", img: "/project5.jpg", span: 2 },
+  { id: 1, title: "Les Soins Vanxains", img: "/project1.jpg", span: 2 },
   { id: 2, title: "Bourg-Du-Bost", img: "/project6.jpg", span: 1 },
-  { id: 3, title: "Vertillac", img: "/project 7.jpg", span: 2 },
+  { id: 3, title: "Verteillac", img: "/project 7.jpg", span: 2 },
   { id: 4, title: "Villa de Luxe", img: "/project8.jpg", span: 1 },
   { id: 5, title: "Les Soins Vanxains", img: "/project9.jpg", span: 2 },
   { id: 6, title: "Les Soins Vanxains", img: "/project10.jpg", span: 1 },

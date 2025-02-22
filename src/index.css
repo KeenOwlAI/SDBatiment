@@ -137,7 +137,6 @@ button {
   transition: background-color 0.3s ease;
   font-family: 'Roboto', sans-serif;
   z-index: 5;
-  /* Add a subtle shadow */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 

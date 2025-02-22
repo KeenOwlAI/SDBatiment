@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -12,20 +13,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
 
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", message: "" });
-    }, 3000);
+    emailjs.send(
+      "service_e8dw4qz", // Replace with your actual Service ID
+      "template_0k5gdda", // Replace with your actual Template ID
+      formData,
+      "JGNUSxtLsoovshyg9" // Replace with your Public Key
+    )
+    .then((response) => {
+      console.log("Email sent successfully:", response);
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", message: "" });
+      }, 3000);
+    })
+    .catch((error) => {
+      console.error("Failed to send email:", error);
+    });
   };
 
   return (
     <div 
       className="min-h-screen flex items-center justify-center p-8 relative bg-cover bg-center"
-      style={{ 
-        backgroundImage: "url('/project11.jpg')",
-      }}
+      style={{ backgroundImage: "url('/project11.jpg')" }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
       
@@ -33,7 +44,7 @@ const Contact = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative z-10 mt-[25%] "
+        className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative z-10 mt-[25%]"
       >
         <h1 className="text-5xl text-gray-900 text-center">Contactez nous</h1>
         <p className="text-center text-gray-600 mt-2">
@@ -61,7 +72,7 @@ const Contact = () => {
                 required
                 whileFocus={{ scale: 1.05, borderColor: "#e2c37646" }}
                 transition={{ duration: 0.3 }}
-                className="w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none"
+                className="text-black w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none"
                 placeholder="Entrez votre nom"
               />
             </div>
@@ -79,7 +90,7 @@ const Contact = () => {
                 required
                 whileFocus={{ scale: 1.05, borderColor: "#e2c37646" }}
                 transition={{ duration: 0.3 }}
-                className="w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none"
+                className="text-black w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none"
                 placeholder="Entrez votre email"
               />
             </div>
@@ -96,7 +107,7 @@ const Contact = () => {
                 required
                 whileFocus={{ scale: 1.05, borderColor: "#e2c37646" }}
                 transition={{ duration: 0.3 }}
-                className="w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none h-32 resize-none"
+                className="text-black w-full mt-1 px-4 py-2 border border-black rounded focus:ring focus:ring-yellow-300 focus:outline-none h-32 resize-none"
                 placeholder="Entrez votre message"
               ></motion.textarea>
             </div>
